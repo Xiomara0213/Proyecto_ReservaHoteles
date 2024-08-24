@@ -29,15 +29,15 @@ Este proyecto proporciona una aplicación para encontrar el hotel más barato en
     ````
 
 ## Requisitos
-° Node.js
-° Lenguaje: Javascript.
-° Frameworks: Ninguno(CSS personalizado).
-° Navegador web compatible.
+- Node.js
+- Lenguaje: Javascript.
+- Frameworks: Ninguno(CSS personalizado).
+- Navegador web compatible.
 
 ## Suposiciones del Problema
-° Los nombres de los días de la semana se derivan directamente del formato de fecha proporcionado. El formato de la entrada debe ser `tipoCliente: ddMmmYYYY(día), ...`.
-° Los tipos de clientes siempre serán Regular o Rewards.
-° No se contempla la validación de fechas pasadas o fuera de rango.
+- Los nombres de los días de la semana se derivan directamente del formato de fecha proporcionado. El formato de la entrada debe ser `tipoCliente: ddMmmYYYY(día), ...`.
+- Los tipos de clientes siempre serán Regular o Rewards.
+- No se contempla la validación de fechas pasadas o fuera de rango.
 
 ## Instalación
 ### Clona el repositorio
@@ -76,15 +76,15 @@ const hotels = [
 ];
 ````
 ### Funciones Principales
-° stringToDate(dateString)
+- stringToDate(dateString)
     Convierte una cadena de fecha en un objeto Date. El formato esperado de la cadena es "16Mar2009(mon)".
-° parseImput(input)
+- parseImput(input)
     Parsea la entrada del usuario y devuelve el tipo de cliente y las fechas en formato de objetos "Date".
-° calculateCost(hotel, customerType, dates)
+- calculateCost(hotel, customerType, dates)
     Calcula el costo total de estadía en un hotel dado el tipo de cliente y las fechas. Devuelve el costo total.
-° findCheapestHotel(input)
+- findCheapestHotel(input)
     Encuentra el hotel más barato basado en la entrada del usuario y devuelve el nombre del hotel más económico o con mayor calificación en caso de empate.
-° showCheapestHotel()
+- showCheapestHotel()
     Muestra el nombre del hotel más barato en la interfaz del usuario.
     
 ## Uso
@@ -92,18 +92,18 @@ const hotels = [
 Asegúrate de que el archivo app.js esté cargado en tu archivo HTML.
 ### Interacción con la Aplicación
 El usuario ingresa los datos en un campo de texto y presiona un botón para encontrar el hotel más barato. 
-° Ejemplos de entrada válidos:
+- Ejemplos de entrada válidos:
     Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)
     Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat)
 ### Resultado
-° La aplicación mostrará el hotel más barato basado en el tipo de cliente y las fechas ingresadas.
-° En caso de empate en precios, el hotel con la calificación más alta será seleccionado.
+- La aplicación mostrará el hotel más barato basado en el tipo de cliente y las fechas ingresadas.
+- En caso de empate en precios, el hotel con la calificación más alta será seleccionado.
 
 ## Diseño de la solución
 La solución fue diseñada para ser simple y eficiente:
-    ° Estructura de Datos: Los hoteles se almacenan en un array de objetos que contiene sus tarifas y calificaciones.
-    ° Lógica de Cálculo: Se evalúan las tarifas según las fechas proporcionadas y se selecciona el hotel con el menor costo.
-    ° Empate: En caso de que dos hoteles tengan el mismo costo, se selecciona el de mayor calificación.
+- Estructura de Datos: Los hoteles se almacenan en un array de objetos que contiene sus tarifas y calificaciones.
+- Lógica de Cálculo: Se evalúan las tarifas según las fechas proporcionadas y se selecciona el hotel con el menor costo.
+- Empate: En caso de que dos hoteles tengan el mismo costo, se selecciona el de mayor calificación.
 
 ## Pruebas
 ### Configura "Jest"
