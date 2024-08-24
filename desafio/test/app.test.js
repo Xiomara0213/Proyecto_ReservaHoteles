@@ -1,6 +1,6 @@
-// Prueba de la Función "calculateCost"
 import { calculateCost, findCheapestHotel } from '../src/app';
 
+// Prueba de la Función "calculateCost"
 test('calcula el costo para un cliente regular en días de semana', () => {
   const hotel = {
     name: "Lakewood",
@@ -25,6 +25,7 @@ test('calcula el costo para un cliente con recompensas en fines de semana', () =
   expect(cost).toBe(80);  // 40 + 40
 });
 
+// Prueba de la Función "findCheapestHotel"
 test('debe devolver Lakewood para un cliente regular durante la semana', () => {
   const input = 'Regular: 17Mar2009(tue), 18Mar2009(wed), 19Mar2009(thu)';
   const result = findCheapestHotel(input);
