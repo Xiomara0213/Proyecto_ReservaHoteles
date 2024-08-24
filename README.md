@@ -7,7 +7,7 @@ alexandra130255@gmail.com
 # Hotel Reservation Challenge
 
 ## Descripción del Proyecto
-Este proyecto proporciona una aplicación para encontrar el hotel más barato en función de la entrada del usuario, que incluye el tipo de cliente ((regular o con recompensas)) y las fechas de estadía. La aplicación compara las tarifas de tres hoteles y muestra el más económico.
+Este proyecto proporciona una aplicación para encontrar el hotel más barato en función de la entrada del usuario, que incluye el tipo de cliente (regular o con recompensas) y las fechas de estadía. La aplicación compara las tarifas de tres hoteles y muestra el más económico.
 
 ## Estructura del Proyecto
     ````bash
