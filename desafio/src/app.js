@@ -124,8 +124,9 @@ export function calculateCost(hotel, customerType, dates) {
 export function findCheapestHotel(input) {
     const { customerType, dates } = parseInput(input);
 
+    // Inicializa las variables para almacenar el hotel más barato y el costo mínimo encontrado
     let cheapestHotel = null;
-    let minCost = Infinity;
+    let minCost = Infinity; // Se establece en Infinity para asegurar que cualquier costo real sea menor que este valor inicial
 
     // Calcula el costo total para cada hotel
     hotels.forEach(hotel => {
@@ -144,8 +145,15 @@ export function findCheapestHotel(input) {
 // Muestra el Resultado en la Interfaz
 export function showCheapestHotel() {
     const input = document.getElementById('input').value;
-    const cheapestHotel = findCheapestHotel(input);
-    document.getElementById('result').textContent = `El hotel más barato es: ${cheapestHotel}`;
+    
+    // Obtiene el hotel más barato y calcula el costo total
+    const { customerType, dates } = parseInput(input);
+    const cheapestHotelName = findCheapestHotel(input);
+    const cheapestHotel = hotels.find(hotel => hotel.name === cheapestHotelName);
+    const totalCost = cheapestHotel ? calculateCost(cheapestHotel, customerType, dates) : 0;
+
+    // Muestra el nombre del hotel y el costo total en la interfaz
+    document.getElementById('result').textContent = `El hotel más barato es: ${cheapestHotelName} con un costo total de $${totalCost}`;
 }
 
 // Presenta las funciones globalmente para su uso en la interfaz de usuario (HTML)

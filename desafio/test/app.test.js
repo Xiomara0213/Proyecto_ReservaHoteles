@@ -38,7 +38,7 @@ test('debe devolver Ridgewood para un cliente con recompensas durante el fin de 
 });
 
 test('debe devolver Ridegewood en caso de empate por calificación', () => {
-  const input = 'Rewards: 27Mar2009(fri), 28Mar2009(sat), 29Mar2009(sun)';
+  const input = 'Rewards: 26Mar2009(thu), 27Mar2009(fri), 28Mar2009(sat)';
   const result = findCheapestHotel(input);
   expect(result).toBe('Ridgewood');  // Lakewood tiene el mismo valor que Ridgewood pero este tiene 5 estrellas
 });
