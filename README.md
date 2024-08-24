@@ -29,12 +29,13 @@ Este proyecto proporciona una aplicación para encontrar el hotel más barato en
     ````
 
 ## Requisitos
+° Node.js
 ° Lenguaje: Javascript.
 ° Frameworks: Ninguno(CSS personalizado).
-° Navegador: Compatible con cualquier navegador
+° Navegador web compatible.
 
 ## Suposiciones del Problema
-° Los nombres de los días de la semana se derivan directamente del formato de fecha proporcionado.
+° Los nombres de los días de la semana se derivan directamente del formato de fecha proporcionado. El formato de la entrada debe ser `tipoCliente: ddMmmYYYY(día), ...`.
 ° Los tipos de clientes siempre serán Regular o Rewards.
 ° No se contempla la validación de fechas pasadas o fuera de rango.
 
@@ -46,6 +47,10 @@ git clone https://github.com/Xiomara0213/Proyecto_ReservaHoteles
 ### Navega a la carpeta del proyecto
 ````bash
 cd Proyecto_ReservaHoteles/desafio
+````
+### Instalar dependencias necesarias
+````bash
+npm install
 ````
 ### Inicializa en un navegador para ejecutar la aplicación.
 ````bash 
@@ -117,4 +122,4 @@ npm test
 Esto ejecutará Jest y mostrará si las pruebas pasan o fallan.
 
 ## Autor
-Creado por Alexandra Montaño Apolo como parte de un desafío técnico.
+Creado por Alexandra Montaño Apolo como parte de un desafío técnico. Algunas funciones en este archivo fueron desarrolladas con asistencia de herramientas de apoyo técnico y no están tomadas directamente de ninguna fuente externa específica.
