@@ -47,8 +47,10 @@ git clone https://github.com/Xiomara0213/Proyecto_ReservaHoteles
 ````bash
 cd Proyecto_ReservaHoteles/desafio
 ````
-### Abre `index.html` en un navegador para ejecutar la aplicación.
-
+### Inicializa en un navegador para ejecutar la aplicación.
+````bash 
+index.html 
+````
 No se requiere configuración adicional ya que todo el código corre localmente en el navegador.
 
 ## Componentes
