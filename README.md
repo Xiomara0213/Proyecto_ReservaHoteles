@@ -41,7 +41,7 @@ Este proyecto proporciona una aplicación para encontrar el hotel más barato en
 ## Instalación
 ### Clona el repositorio
 ````bash
-git clone https://github.com/tu-usuario/hotel-reservation-challenge.git
+git clone https://github.com/Xiomara0213/Proyecto_ReservaHoteles
 ````
 ### Navega a la carpeta del proyecto
 ````bash
