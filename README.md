@@ -19,7 +19,7 @@ Este proyecto proporciona una aplicación para encontrar el hotel más barato en
     │   │   └── app.js: Lógica principal para la funcionalidad de la aplicación.
     │   │
     │   │── test/
-    │   │   └── app.test.js: Lógica para pruebas unitarias con el fin de garantizar la funcionalidad de la aplicación. Las pruebas se realizan utilizando **Jest**.
+    │   │   └── app.test.js: Lógica para pruebas unitarias con el fin de garantizar la funcionalidad de la aplicación.
     │   │
     │   │── index.html: Página principal de la aplicación con la interfaz de usuario.
     │   │   
@@ -27,7 +27,7 @@ Este proyecto proporciona una aplicación para encontrar el hotel más barato en
     │
     └── README.md: Instrucciones para instalar y ejecutar la aplicación.
     ````
-        
+
 ## Requisitos
 ° Lenguaje: Javascript.
 ° Frameworks: Ninguno(CSS personalizado).
