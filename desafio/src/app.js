@@ -148,6 +148,11 @@ export function showCheapestHotel() {
     
     // Obtiene el hotel más barato y calcula el costo total
     const { customerType, dates } = parseInput(input);
+    // Verifica si los datos son válidos
+    if (!customerType || dates.length === 0 || dates.includes(null)) {
+        document.getElementById('result').textContent = 'Datos erróneos';
+        return;
+    }
     const cheapestHotelName = findCheapestHotel(input);
     const cheapestHotel = hotels.find(hotel => hotel.name === cheapestHotelName);
     const totalCost = cheapestHotel ? calculateCost(cheapestHotel, customerType, dates) : 0;
