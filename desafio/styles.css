@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f5f5f5; /* Fondo claro para mejor contraste */
+}
+
+input {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%; /* Uso de porcentaje para un diseño responsivo */
+    max-width: 400px; /* Limitar el tamaño máximo del input */
+    border: 2px solid #ccc; /* Borde para mejor visibilidad */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+button:active {
+    transform: scale(0.98); /* Efecto de presionar el botón */
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    margin: 20px 0; /* Espaciado vertical */
+}
